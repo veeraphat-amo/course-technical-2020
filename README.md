@@ -11,3 +11,7 @@
 ## Week 5
 ## Week 6
 ## Week 7
+
+## Resources
+* https://git-scm.com/
+* https://hub.docker.com/editions/community/docker-ce-desktop-windows
