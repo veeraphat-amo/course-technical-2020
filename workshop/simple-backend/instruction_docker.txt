@@ -56,3 +56,30 @@ $docker container run --name backend -p 4000:4000 \
    --network demo-network \
    myapp:1.0.0
 ```
+
+## Working with docker-compose
+Create file `docker-compose.yml`
+```
+version: "3.8"
+services:
+  backend:
+    image: myapp:1.0.0
+    ports:
+      - 4000:4000
+
+  mongo:
+    image: mongo:4.2.8
+
+```
+
+Start with docker-compose
+```
+$docker-compose up -d
+$docker-compose ps
+$docker-compose logs --follow
+```
+
+Delette all
+```
+$docker-compose down
+```
